@@ -53,7 +53,7 @@ export default function Specialties() {
               Servicios Principales
             </span>
             <h2 className="font-display-md text-2xl sm:text-3xl lg:text-4xl text-primary tracking-tight font-bold">
-              Especialidades de CTI
+              Especialidades
             </h2>
           </div>
           <p className="text-sm sm:text-base text-on-surface-variant max-w-md">
