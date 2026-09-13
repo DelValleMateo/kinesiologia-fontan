@@ -80,9 +80,21 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-5 sm:pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs text-on-surface-variant">
-          <p className="text-center sm:text-left">
-            © {new Date().getFullYear()} CTI - Centro Terapéutico Integral · Patricia Fontán Terapista Física.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-1 sm:gap-2 text-center sm:text-left">
+            <p>
+              © {new Date().getFullYear()} CTI - Centro Terapéutico Integral · Patricia Fontán Terapista Física.
+            </p>
+            <span className="hidden sm:inline text-slate-300">|</span>
+            <p>
+              Sitio web creado por{' '}
+              <a
+                href="mailto:mateodelvalle100@gmail.com"
+                className="font-semibold text-secondary hover:underline"
+              >
+                mateodelvalle100@gmail.com
+              </a>
+            </p>
+          </div>
           <div className="flex items-center gap-3 sm:gap-4">
             <a className="hover:text-secondary transition-colors" href="#especialidades">Tratamientos</a>
             <a className="hover:text-secondary transition-colors" href="#contacto">Ubicación</a>
