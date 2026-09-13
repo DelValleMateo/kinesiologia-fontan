@@ -4,8 +4,12 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    q: '¿Cómo solicito un turno en CTI?',
-    a: 'La solicitud de turnos se realiza de forma directa comunicándote por WhatsApp al +54 3446-618591 con Patricia Fontán. Allí coordinaremos el día y el horario que mejor se adapte a tu disponibilidad.',
+    q: '¿Cómo solicito un turno en el consultorio CTI o a domicilio?',
+    a: 'La solicitud de turnos se realiza de forma directa comunicándote por WhatsApp al +54 3446-618591 con la kinesióloga Patricia Fontán. Podés indicarle si preferís atenderte en el consultorio CTI o si necesitás atención a domicilio en Gualeguaychú, y coordinarán el día y horario más conveniente.',
+  },
+  {
+    q: '¿Se realizan consultas y sesiones de kinesiología a domicilio?',
+    a: 'Sí, brindamos atención kinésica y consultas a domicilio en toda la ciudad de Gualeguaychú. Esta modalidad es ideal para personas mayores, pacientes en recuperación postquirúrgica, con movilidad reducida o que prefieran recibir su rehabilitación en la comodidad de su hogar.',
   },
   {
     q: '¿Qué patologías y síntomas se tratan en A.T.M.?',
@@ -16,8 +20,8 @@ const faqs = [
     a: 'Es una técnica manual sumamente suave y relajante orientada a activar la circulación linfática. Está especialmente recomendada en recuperaciones post-quirúrgicas (cirugías estéticas o traumatológicas), sensación de pesadez en piernas, retención de líquidos y edemas.',
   },
   {
-    q: '¿Dónde queda el consultorio y cómo debo asistir?',
-    a: 'Estamos ubicados en 1° de mayo 130. Te recomendamos asistir con ropa cómoda que permita una evaluación sencilla de las zonas a tratar.',
+    q: '¿Dónde queda el consultorio CTI y cómo debo asistir?',
+    a: 'El consultorio CTI está ubicado en 1° de mayo 130, Gualeguaychú. Te recomendamos asistir con ropa cómoda que permita una evaluación sencilla de las zonas a tratar. Recordá agendar tu turno previo por WhatsApp.',
   },
 ]
 
@@ -37,7 +41,7 @@ export default function FAQ() {
             Preguntas Frecuentes
           </h2>
           <p className="text-sm sm:text-base text-on-surface-variant px-2">
-            Respuestas a las dudas habituales antes de asistir a tu primera sesión en CTI.
+            Respuestas a las dudas habituales antes de asistir al consultorio CTI o solicitar tu sesión a domicilio.
           </p>
         </div>
 

@@ -10,11 +10,11 @@ export default function WhatsAppBooking() {
             <span>Coordinación Inmediata</span>
           </div>
           <h2 className="font-display-md text-2xl sm:text-3xl lg:text-4xl text-primary tracking-tight mb-3 font-bold">
-            Pedí tu Turno en CTI por WhatsApp
+            Pedí tu Turno en CTI o a Domicilio por WhatsApp
           </h2>
           <p className="text-sm sm:text-base text-on-surface-variant">
-            En CTI priorizamos la atención personalizada desde el primer contacto. Coordiná día y
-            horario directamente con Patricia Fontán de forma rápida y sencilla.
+            En el consultorio CTI priorizamos la atención personalizada desde el primer contacto. Coordiná día y
+            horario directamente con la kinesióloga Patricia Fontán de forma rápida y sencilla.
           </p>
         </div>
 
@@ -31,9 +31,21 @@ export default function WhatsAppBooking() {
 
               <div className="space-y-3 sm:space-y-4">
                 {[
-                  { n: '1', title: 'Hacé clic en el botón de WhatsApp', desc: 'Se abrirá una conversación directa con Patricia Fontán (+54 3446-618591) con un mensaje listo para enviar.' },
-                  { n: '2', title: 'Indicanos tu motivo de consulta', desc: 'Contanos si buscás Masajes, Drenaje Linfático Manual, Corrección Postural o tratamiento de A.T.M.' },
-                  { n: '3', title: 'Coordiná día y horario disponible', desc: 'Te responderemos a la brevedad con las opciones horarias en el consultorio de 1° de mayo 130.' },
+                  {
+                    n: '1',
+                    title: 'Hacé clic en el botón de WhatsApp',
+                    desc: 'Se abrirá una conversación directa con Patricia Fontán (+54 3446-618591) con un mensaje listo para enviar.',
+                  },
+                  {
+                    n: '2',
+                    title: 'Indicanos tu motivo de consulta y modalidad',
+                    desc: 'Contanos si buscás Masajes, Drenaje Linfático Manual, Corrección Postural o ATM, y si preferís atención en el consultorio CTI o a domicilio.',
+                  },
+                  {
+                    n: '3',
+                    title: 'Coordiná día y horario disponible',
+                    desc: 'Te responderemos a la brevedad con las opciones horarias en el consultorio CTI (1° de mayo 130) o para tu sesión a domicilio en Gualeguaychú.',
+                  },
                 ].map((step) => (
                   <div key={step.n} className="flex items-start gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-white/75 border border-slate-100">
                     <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-primary text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-sm">
@@ -49,7 +61,11 @@ export default function WhatsAppBooking() {
 
               {/* Badges */}
               <div className="flex flex-wrap gap-2 text-xs font-semibold text-secondary">
-                {['Atención 1 a 1 exclusiva', 'Ambiente climatizado y privado', 'Ubicación céntrica'].map((b) => (
+                {[
+                  'Consultorio CTI (1° de mayo 130)',
+                  'Atención a domicilio en Gualeguaychú',
+                  'Atención 1 a 1 exclusiva',
+                ].map((b) => (
                   <span key={b} className="px-2.5 sm:px-3 py-1.5 rounded-xl glass-pill flex items-center gap-1">
                     <span className="material-symbols-outlined text-sm">check</span>
                     {b}
@@ -69,7 +85,7 @@ export default function WhatsAppBooking() {
                   </div>
                   <div>
                     <h4 className="font-bold text-sm sm:text-base text-primary">Patricia Fontán</h4>
-                    <p className="text-xs text-secondary font-semibold">Terapista Física · Consultorio CTI</p>
+                    <p className="text-xs text-secondary font-semibold">Kinesióloga · Consultorio CTI</p>
                   </div>
                 </div>
                 <span className="px-2.5 sm:px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center gap-1 shrink-0">
@@ -81,8 +97,9 @@ export default function WhatsAppBooking() {
               {/* Info rows */}
               <div className="space-y-2.5 sm:space-y-3">
                 {[
-                  { icon: 'location_on', label: 'Dirección:', value: '1° de mayo 130' },
-                  { icon: 'call', label: 'WhatsApp:', value: '+54 3446-618591' },
+                  { icon: 'location_on', label: 'Consultorio CTI:', value: '1° de mayo 130' },
+                  { icon: 'home', label: 'Atención a Domicilio:', value: 'En toda la ciudad de Gualeguaychú' },
+                  { icon: 'call', label: 'WhatsApp / Línea directa:', value: '+54 3446-618591' },
                   { icon: 'mail', label: 'Email:', value: 'patofontan2015@gmail.com' },
                 ].map((row) => (
                   <div key={row.label} className="flex items-start gap-2.5 sm:gap-3 text-sm">
@@ -99,14 +116,14 @@ export default function WhatsAppBooking() {
               <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f0f9ff] border border-[#bae6fd] text-xs text-on-surface-variant leading-relaxed">
                 <span className="font-bold text-primary block mb-1">Mensaje sugerido al abrir WhatsApp:</span>
                 <p className="italic text-on-surface">
-                  &ldquo;Hola Patricia, quisiera consultar por un turno en CTI para [indicar tratamiento o dolor]...&rdquo;
+                  &ldquo;Hola Patricia, quisiera consultar por un turno para [indicar motivo] en consultorio CTI / a domicilio...&rdquo;
                 </p>
               </div>
 
               {/* CTA */}
               <div className="border-t border-slate-200 pt-4">
                 <a
-                  href="https://wa.me/5493446618591?text=Hola%20Patricia,%20quisiera%20consultar%20por%20un%20turno%20en%20CTI"
+                  href="https://wa.me/5493446618591?text=Hola%20Patricia,%20quisiera%20consultar%20por%20un%20turno%20en%20el%20consultorio%20CTI%20o%20a%20domicilio"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-3.5 sm:py-4 px-6 rounded-xl sm:rounded-2xl bg-[#25D366] text-white font-bold text-sm sm:text-base shadow-xl hover:bg-[#20ba59] transition-all flex items-center justify-center gap-2 sm:gap-3"
@@ -115,7 +132,7 @@ export default function WhatsAppBooking() {
                   <span>Pedir Turno por WhatsApp</span>
                 </a>
                 <p className="text-center text-xs text-on-surface-variant mt-2">
-                  Respuesta rápida y coordinación directa con la profesional.
+                  Respuesta rápida y coordinación directa con la kinesióloga.
                 </p>
               </div>
             </div>

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="relative z-10 w-full pt-24 min-h-screen">
+      <main className="relative z-10 w-full pt-24 sm:pt-28 md:pt-32 min-h-screen">
         <div className="flex flex-col w-full">
           <Hero />
           <Professional />

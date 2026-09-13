@@ -2,7 +2,7 @@ export default function FloatingWhatsApp() {
   return (
     <aside aria-label="Contacto flotante" className="fixed bottom-6 right-6 z-50">
       <a
-        href="https://wa.me/5493446618591?text=Hola%20Patricia,%20quisiera%20consultar%20por%20un%20turno%20en%20CTI"
+        href="https://wa.me/5493446618591?text=Hola%20Patricia,%20quisiera%20consultar%20por%20un%20turno%20en%20el%20consultorio%20CTI%20o%20a%20domicilio"
         target="_blank"
         rel="noopener noreferrer"
         title="Pedir turno por WhatsApp"

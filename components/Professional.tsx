@@ -9,13 +9,13 @@ export default function Professional() {
             Enfoque y Filosofía
           </span>
           <h2 className="font-display-md text-2xl sm:text-3xl lg:text-4xl text-primary tracking-tight mb-4 font-bold leading-tight">
-            Un espacio terapéutico pensado para restablecer tu armonía corporal
+            Un espacio pensado para restablecer tu armonía corporal
           </h2>
           <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed">
-            En CTI abordamos a cada persona como una unidad biomecánica y emocional única. Guiados
-            por la calidez y la experiencia de Patricia Fontán, diseñamos planes terapéuticos
-            manuales orientados a eliminar las causas del dolor y no solo sus manifestaciones
-            superficiales.
+            En <strong>CTI</strong> abordamos a cada persona como una unidad biomecánica y emocional
+            única. Guiados por la calidez y la experiencia de la kinesióloga Patricia Fontán, diseñamos
+            planes de kinesiología y terapia manual orientados a eliminar las causas del dolor y no solo
+            sus manifestaciones superficiales, tanto en consultorio como a domicilio.
           </p>
         </div>
 
@@ -29,35 +29,54 @@ export default function Professional() {
             <div className="glass-card p-5 sm:p-8 rounded-2xl sm:rounded-3xl">
               <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-primary text-white flex items-center justify-center font-bold text-base sm:text-xl shadow-md border border-white/20 shrink-0">
-                  PF
+                  CTI
                 </div>
                 <div>
                   <h3 className="text-base sm:text-lg font-bold text-primary">Patricia Fontán</h3>
-                  <p className="text-xs sm:text-sm text-secondary font-semibold">Terapista Física · Directora en CTI</p>
+                  <p className="text-xs sm:text-sm text-secondary font-semibold">Kinesióloga · Consultorio CTI</p>
                 </div>
               </div>
               <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed mb-3 sm:mb-4">
-                Con una sólida vocación por la terapia física manual y la reeducación funcional, en
-                el <strong>Centro Terapéutico Integral (CTI)</strong> brindamos una atención cercana,
-                respetando los tiempos del cuerpo y enfocándonos en la escucha activa de cada paciente.
+                Con una sólida vocación por la kinesiología, la terapia manual y la reeducación
+                funcional, en el <strong>Centro Terapéutico Integral (CTI)</strong> brindamos una
+                atención cercana, respetando los tiempos del cuerpo y enfocándonos en la escucha activa
+                de cada paciente.
               </p>
               <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed">
                 Ya sea que necesites descomprimir contracturas acumuladas por el estrés cotidiano,
                 rehabilitarte tras una intervención quirúrgica con drenaje linfático, alinear tu
                 columna o solucionar los síntomas del bruxismo y la disfunción de ATM, en nuestro
-                consultorio de <strong>1° de mayo 130</strong> encontrarás contención y profesionalismo.
+                consultorio de <strong>1° de mayo 130</strong> o a través de nuestras <strong>visitas a domicilio</strong>{' '}
+                encontrarás contención y profesionalismo.
               </p>
             </div>
 
-            {/* 3 value cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+            {/* 4 value cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {[
-                { icon: 'spa', title: 'Terapia Manual', desc: 'Manipulación suave que favorece la relajación miofascial y el retorno venoso.' },
-                { icon: 'person_pin', title: 'Tratamiento 1 a 1', desc: 'Sesiones exclusivas dedicadas a un solo paciente sin esperas ni distracciones.' },
-                { icon: 'health_and_safety', title: 'Alivio Integral', desc: 'Pautas posturales y de autocuidado para que los resultados perduren en el tiempo.' },
+                {
+                  icon: 'spa',
+                  title: 'Terapia Manual',
+                  desc: 'Manipulación suave y precisa que favorece la relajación miofascial y el retorno venoso.',
+                },
+                {
+                  icon: 'person_pin',
+                  title: 'Tratamiento 1 a 1',
+                  desc: 'Sesiones exclusivas dedicadas a un solo paciente sin esperas ni distracciones.',
+                },
+                {
+                  icon: 'home',
+                  title: 'Atención a Domicilio',
+                  desc: 'Consultas y sesiones kinésicas a domicilio en Gualeguaychú para pacientes con movilidad reducida.',
+                },
+                {
+                  icon: 'health_and_safety',
+                  title: 'Alivio Integral',
+                  desc: 'Pautas posturales y de autocuidado para que los resultados perduren en el tiempo.',
+                },
               ].map((v) => (
-                <div key={v.title} className="p-4 sm:p-6 rounded-xl sm:rounded-2xl glass-card flex flex-row sm:flex-col gap-3 sm:gap-0">
-                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-secondary/10 border border-secondary/20 text-secondary flex items-center justify-center shrink-0 sm:mb-3">
+                <div key={v.title} className="p-4 sm:p-5 rounded-xl sm:rounded-2xl glass-card flex flex-col gap-2">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-secondary/10 border border-secondary/20 text-secondary flex items-center justify-center shrink-0">
                     <span className="material-symbols-outlined text-lg sm:text-xl">{v.icon}</span>
                   </div>
                   <div>
@@ -79,9 +98,10 @@ export default function Professional() {
             </div>
             <div className="space-y-3 sm:space-y-4 text-sm">
               {[
-                { label: 'Centro', value: 'CTI - Centro Terapéutico Integral', sub: null, icon: null },
-                { label: 'Profesional Responsable', value: 'Patricia Fontán', sub: 'Terapista Física', icon: null },
-                { label: 'Dirección', value: '1° de mayo 130', sub: null, icon: 'home_pin' },
+                { label: 'Centro / Consultorio', value: 'CTI - Centro Terapéutico Integral', sub: null, icon: null },
+                { label: 'Profesional Responsable', value: 'Patricia Fontán', sub: 'Kinesióloga', icon: null },
+                { label: 'Dirección del Consultorio', value: '1° de mayo 130', sub: null, icon: 'home_pin' },
+                { label: 'Modalidad de Atención', value: 'Consultorio CTI y A Domicilio', sub: 'En Gualeguaychú, Entre Ríos', icon: 'home' },
               ].map((item) => (
                 <div key={item.label} className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white/75 border border-slate-100">
                   <span className="text-xs text-on-surface-variant font-semibold block mb-0.5">{item.label}</span>
@@ -96,11 +116,19 @@ export default function Professional() {
               <div className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white/75 border border-slate-100">
                 <span className="text-xs text-on-surface-variant font-semibold block mb-1.5">Contacto Directo</span>
                 <div className="space-y-1.5">
-                  <a href="https://wa.me/5493446618591?text=Hola%20Patricia,%20quisiera%20consultar%20por%20un%20turno%20en%20CTI" target="_blank" rel="noopener noreferrer" className="font-bold text-secondary hover:underline flex items-center gap-1.5 text-sm">
+                  <a
+                    href="https://wa.me/5493446618591?text=Hola%20Patricia,%20quisiera%20consultar%20por%20un%20turno%20en%20el%20consultorio%20CTI%20o%20a%20domicilio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-secondary hover:underline flex items-center gap-1.5 text-sm"
+                  >
                     <span className="material-symbols-outlined text-base">call</span>
                     +54 3446-618591
                   </a>
-                  <a href="mailto:patofontan2015@gmail.com" className="font-medium text-on-surface-variant hover:text-secondary flex items-center gap-1.5 text-xs">
+                  <a
+                    href="mailto:patofontan2015@gmail.com"
+                    className="font-medium text-on-surface-variant hover:text-secondary flex items-center gap-1.5 text-xs"
+                  >
                     <span className="material-symbols-outlined text-base">mail</span>
                     patofontan2015@gmail.com
                   </a>
@@ -108,7 +136,7 @@ export default function Professional() {
               </div>
 
               <a
-                href="https://wa.me/5493446618591?text=Hola%20Patricia,%20quisiera%20consultar%20por%20un%20turno%20en%20CTI"
+                href="https://wa.me/5493446618591?text=Hola%20Patricia,%20quisiera%20consultar%20por%20un%20turno%20en%20el%20consultorio%20CTI%20o%20a%20domicilio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3 sm:py-3.5 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-bold text-sm text-center block shadow-lg hover:shadow-xl hover:opacity-95 transition-all border border-white/20"

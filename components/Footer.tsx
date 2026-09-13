@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Footer() {
   return (
     <footer className="relative z-10 w-full glass-card border-t border-slate-200 text-on-surface py-10 sm:py-12">
@@ -7,18 +9,24 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-3 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-xl bg-primary text-white flex items-center justify-center font-bold text-xs border border-white/20 shrink-0">
-                CTI
-              </div>
-              <span className="font-bold text-sm sm:text-base text-primary">Centro Terapéutico Integral</span>
+              <Image
+                src="/logo.png"
+                alt="Logo Patricia Fontán - Kinesiología"
+                width={36}
+                height={36}
+                className="w-8 h-8 sm:w-9 sm:h-9 object-contain shrink-0"
+              />
+              <span className="font-headline-sm font-extrabold text-base text-primary tracking-tight">
+                CTI · Centro Terapéutico Integral
+              </span>
             </div>
             <p className="text-xs text-on-surface-variant leading-relaxed">
-              Rehabilitación física y bienestar integral a través de técnicas manuales, masajes
-              terapéuticos, drenaje y corrección postural.
+              Rehabilitación física y bienestar integral a través de kinesiología, terapia manual, masajes
+              terapéuticos, drenaje y corrección postural en consultorio y a domicilio.
             </p>
             <div className="pt-1">
               <p className="font-bold text-xs text-primary">Patricia Fontán</p>
-              <p className="text-xs text-secondary font-medium">Terapista Física</p>
+              <p className="text-xs text-secondary font-semibold">Kinesióloga</p>
             </div>
           </div>
 
@@ -30,24 +38,29 @@ export default function Footer() {
               <li>• Drenaje Linfático Manual</li>
               <li>• Corrección Postural</li>
               <li>• A.T.M. (Articulación Témporo-Mandibular)</li>
+              <li>• Kinesiología y Rehabilitación a Domicilio</li>
             </ul>
           </div>
 
-          {/* Consultorio */}
+          {/* Consultorio & Modalidades */}
           <div className="space-y-3">
-            <h4 className="font-bold text-sm text-primary">Consultorio</h4>
+            <h4 className="font-bold text-sm text-primary">Atención</h4>
             <ul className="space-y-2 text-xs text-on-surface-variant">
               <li className="flex items-start gap-2">
                 <span className="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">location_on</span>
-                <span>1° de mayo 130</span>
+                <span>Consultorio CTI: 1° de mayo 130</span>
               </li>
               <li className="flex items-start gap-2">
+                <span className="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">home</span>
+                <span>Atención a domicilio en Gualeguaychú</span>
+              </li>
+              <li className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-secondary text-base shrink-0">person</span>
                 <span>Atención 1 a 1 con turno previo</span>
               </li>
-              <li className="flex items-start gap-2">
+              <li className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-secondary text-base shrink-0">verified</span>
-                <span>Espacio terapéutico privado y climatizado</span>
+                <span>Espacio privado y climatizado</span>
               </li>
             </ul>
           </div>
@@ -55,10 +68,10 @@ export default function Footer() {
           {/* Contacto */}
           <div className="space-y-3">
             <h4 className="font-bold text-sm text-primary">Contacto Directo</h4>
-            <p className="text-xs text-on-surface-variant">Para consultas y turnos podés escribir directamente:</p>
+            <p className="text-xs text-on-surface-variant">Para coordinar turnos en consultorio o a domicilio:</p>
             <div className="flex flex-col gap-2 pt-1">
               <a
-                href="https://wa.me/5493446618591?text=Hola%20Patricia,%20quisiera%20consultar%20por%20un%20turno%20en%20CTI"
+                href="https://wa.me/5493446618591?text=Hola%20Patricia,%20quisiera%20consultar%20por%20un%20turno%20en%20el%20consultorio%20CTI%20o%20a%20domicilio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-bold text-xs text-secondary hover:underline flex items-center gap-1.5"
@@ -82,7 +95,7 @@ export default function Footer() {
         <div className="pt-5 sm:pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs text-on-surface-variant">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-1 sm:gap-2 text-center sm:text-left">
             <p>
-              © {new Date().getFullYear()} CTI - Centro Terapéutico Integral · Patricia Fontán Terapista Física.
+              © {new Date().getFullYear()} CTI - Centro Terapéutico Integral · Patricia Fontán Kinesióloga. Todos los derechos reservados.
             </p>
             <span className="hidden sm:inline text-slate-300">|</span>
             <p>
@@ -100,7 +113,7 @@ export default function Footer() {
             <a className="hover:text-secondary transition-colors" href="#contacto">Ubicación</a>
             <a
               className="hover:text-secondary font-bold transition-colors"
-              href="https://wa.me/5493446618591?text=Hola%20Patricia,%20quisiera%20consultar%20por%20un%20turno%20en%20CTI"
+              href="https://wa.me/5493446618591?text=Hola%20Patricia,%20quisiera%20consultar%20por%20un%20turno%20en%20el%20consultorio%20CTI%20o%20a%20domicilio"
               target="_blank"
               rel="noopener noreferrer"
             >

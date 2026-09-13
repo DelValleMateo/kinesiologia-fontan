@@ -3,12 +3,16 @@ import './globals.css'
 import FloatingWhatsApp from '@/components/FloatingWhatsApp'
 
 export const metadata: Metadata = {
-  title: 'CTI — Centro Terapéutico Integral | Patricia Fontán · Terapista Física',
+  title: 'Patricia Fontán - Kinesiología | Consultorio CTI y Atención a Domicilio',
   description:
-    'Centro Terapéutico Integral en 1° de mayo 130. Masajes terapéuticos, drenaje linfático, corrección postural y A.T.M. con Patricia Fontán · Terapista Física. Turnos por WhatsApp.',
+    'Patricia Fontán - Kinesiología en Consultorio CTI (1° de mayo 130) y atención a domicilio en Gualeguaychú. Masajes, drenaje linfático, corrección postural y A.T.M. Turnos por WhatsApp.',
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
   keywords: [
-    'kinesiología', 'CTI', 'Centro Terapéutico Integral', 'Patricia Fontán',
-    'Terapista Física', 'masajes', 'drenaje linfático', 'corrección postural',
+    'kinesiología', 'Patricia Fontán', 'kinesióloga', 'CTI', 'Centro Terapéutico Integral',
+    'kinesiología a domicilio', 'masajes', 'drenaje linfático', 'corrección postural',
     'ATM bruxismo', 'Gualeguaychú', 'Entre Ríos',
   ],
 }
@@ -17,6 +21,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es">
       <head>
+        <link rel="icon" href="/logo.png" type="image/png" sizes="any" />
+        <link rel="apple-touch-icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

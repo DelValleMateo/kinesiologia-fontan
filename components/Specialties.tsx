@@ -115,12 +115,12 @@ export default function Specialties() {
               </h3>
               <p className="text-xs sm:text-sm text-white/90 mt-1 max-w-2xl leading-relaxed">
                 Escribile a Patricia Fontán. Te asesorará según tu sintomatología para coordinar la
-                mejor sesión terapéutica en CTI.
+                mejor sesión de kinesiología en el consultorio CTI o a domicilio.
               </p>
             </div>
           </div>
           <a
-            href="https://wa.me/5493446618591?text=Hola%20Patricia,%20tengo%20dudas%20sobre%20qu%C3%A9%20tratamiento%20necesito%20en%20CTI"
+            href="https://wa.me/5493446618591?text=Hola%20Patricia,%20tengo%20dudas%20sobre%20qu%C3%A9%20tratamiento%20necesito%20en%20consultorio%20CTI%20o%20a%20domicilio"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full md:w-auto shrink-0 px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl bg-white text-primary font-bold text-sm md:text-base shadow-xl hover:bg-[#e0f2fe] hover:text-secondary hover:scale-105 transition-all flex items-center justify-center gap-2 border border-white/60"
