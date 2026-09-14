@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function WhatsAppBooking() {
   return (
     <section className="py-12 sm:py-16 lg:py-24 relative" id="reservar-turno">
@@ -80,8 +82,14 @@ export default function WhatsAppBooking() {
               {/* Header */}
               <div className="flex items-center justify-between pb-4 border-b border-slate-200">
                 <div className="flex items-center gap-2 sm:gap-3">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-primary text-white flex items-center justify-center font-bold text-sm sm:text-lg shadow-md border border-white/20 shrink-0">
-                    CTI
+                  <div className="w-11 h-11 sm:w-13 sm:h-13 rounded-xl sm:rounded-2xl overflow-hidden bg-white shadow-md border border-white/40 shrink-0 p-1 flex items-center justify-center">
+                    <Image
+                      src="/logo-cti.jpeg"
+                      alt="Logo CTI"
+                      width={52}
+                      height={52}
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <div>
                     <h4 className="font-bold text-sm sm:text-base text-primary">Patricia Fontán</h4>

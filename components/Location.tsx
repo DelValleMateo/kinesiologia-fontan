@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Location() {
   return (
     <section className="py-12 sm:py-16 lg:py-20 relative" id="contacto">
@@ -83,8 +85,14 @@ export default function Location() {
           {/* Right — CTI card */}
           <div className="lg:col-span-6">
             <div className="rounded-2xl sm:rounded-3xl glass-card p-5 sm:p-6 md:p-8 flex flex-col items-center text-center border border-white/95">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl bg-primary text-white flex items-center justify-center text-lg sm:text-2xl font-bold shadow-lg mb-4 border border-white/20">
-                CTI
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl sm:rounded-3xl overflow-hidden bg-white shadow-lg mb-4 border border-white/60 p-2 flex items-center justify-center">
+                <Image
+                  src="/logo-cti.jpeg"
+                  alt="Logo CTI"
+                  width={96}
+                  height={96}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-primary mb-1">CTI - Centro Terapéutico Integral</h3>
               <p className="text-xs sm:text-sm font-semibold text-secondary mb-3">Patricia Fontán · Kinesióloga</p>

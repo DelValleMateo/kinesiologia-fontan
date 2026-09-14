@@ -10,11 +10,11 @@ export default function Footer() {
           <div className="space-y-3 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2.5">
               <Image
-                src="/logo.png"
-                alt="Logo Patricia Fontán - Kinesiología"
+                src="/logo-cti.jpeg"
+                alt="Logo CTI"
                 width={36}
                 height={36}
-                className="w-8 h-8 sm:w-9 sm:h-9 object-contain shrink-0"
+                className="w-8 h-8 sm:w-9 sm:h-9 object-contain shrink-0 rounded-full"
               />
               <span className="font-headline-sm font-extrabold text-base text-primary tracking-tight">
                 CTI · Centro Terapéutico Integral

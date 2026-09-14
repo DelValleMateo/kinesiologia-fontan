@@ -1,22 +1,32 @@
+import Image from 'next/image'
+
 export default function Professional() {
   return (
     <section className="py-12 sm:py-16 lg:py-20 relative" id="profesional">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
 
         {/* Header */}
-        <div className="max-w-3xl mb-10 sm:mb-12">
-          <span className="inline-block px-3 sm:px-3.5 py-1 rounded-full glass-pill text-secondary text-xs font-bold mb-3 border border-[#bae6fd]">
-            Enfoque y Filosofía
-          </span>
-          <h2 className="font-display-md text-2xl sm:text-3xl lg:text-4xl text-primary tracking-tight mb-4 font-bold leading-tight">
-            Un espacio pensado para restablecer tu armonía corporal
-          </h2>
-          <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed">
-            En <strong>CTI</strong> abordamos a cada persona como una unidad biomecánica y emocional
-            única. Guiados por la calidez y la experiencia de la kinesióloga Patricia Fontán, diseñamos
-            planes de kinesiología y terapia manual orientados a eliminar las causas del dolor y no solo
-            sus manifestaciones superficiales, tanto en consultorio como a domicilio.
-          </p>
+        <div className="max-w-5xl mb-10 sm:mb-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 sm:gap-8">
+          <div className="max-w-3xl">
+            <span className="inline-block px-3 sm:px-3.5 py-1 rounded-full glass-pill text-secondary text-xs font-bold mb-3 border border-[#bae6fd]">
+              Enfoque y Filosofía
+            </span>
+            <h2 className="font-display-md text-2xl sm:text-3xl lg:text-4xl text-primary tracking-tight mb-4 font-bold leading-tight">
+              Un espacio pensado para restablecer tu armonía corporal
+            </h2>
+            <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+              En el <strong>CTI</strong> abordamos a cada persona como una unidad, además de los servicios de kinesiología, encontrarás profesionales del área de Odontología, Psicología, Fonoaudiología y Estética Corporal.
+            </p>
+          </div>
+          <div className="shrink-0 self-center md:self-auto p-2.5 rounded-2xl sm:rounded-3xl glass-card border border-white/90 bg-white/85 shadow-md">
+            <Image
+              src="/logo-cti.jpeg"
+              alt="Logo CTI - Centro Terapéutico Integral"
+              width={110}
+              height={110}
+              className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain rounded-xl"
+            />
+          </div>
         </div>
 
         {/* Bento grid */}
@@ -28,8 +38,14 @@ export default function Professional() {
             {/* Bio card */}
             <div className="glass-card p-5 sm:p-8 rounded-2xl sm:rounded-3xl">
               <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-primary text-white flex items-center justify-center font-bold text-base sm:text-xl shadow-md border border-white/20 shrink-0">
-                  CTI
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl overflow-hidden bg-white shadow-md border border-white/60 shrink-0 p-1 flex items-center justify-center">
+                  <Image
+                    src="/logo-cti.jpeg"
+                    alt="Logo CTI"
+                    width={56}
+                    height={56}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="text-base sm:text-lg font-bold text-primary">Patricia Fontán</h3>
@@ -37,17 +53,10 @@ export default function Professional() {
                 </div>
               </div>
               <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed mb-3 sm:mb-4">
-                Con una sólida vocación por la kinesiología, la terapia manual y la reeducación
-                funcional, en el <strong>Centro Terapéutico Integral (CTI)</strong> brindamos una
-                atención cercana, respetando los tiempos del cuerpo y enfocándonos en la escucha activa
-                de cada paciente.
+                Con una sólida vocación por la kinesiología y experiencia profesional de más de 25 años, te brindaré una atención cercana, respetando los tiempos del cuerpo y enfocándome en la escucha activa de cada paciente.
               </p>
               <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed">
-                Ya sea que necesites descomprimir contracturas acumuladas por el estrés cotidiano,
-                rehabilitarte tras una intervención quirúrgica con drenaje linfático, alinear tu
-                columna o solucionar los síntomas del bruxismo y la disfunción de ATM, en nuestro
-                consultorio de <strong>1° de mayo 130</strong> o a través de nuestras <strong>visitas a domicilio</strong>{' '}
-                encontrarás contención y profesionalismo.
+                Ya sea que necesites descomprimir contracturas acumuladas por el estrés cotidiano, rehabilitarte tras una intervención quirúrgica, mejorar la circulación linfática y venosa con drenaje linfático, alinear tu columna o solucionar los síntomas del bruxismo y la disfunción de ATM, en mi consultorio de <strong>1° de mayo 130</strong> o a través de <strong>visitas a domicilio</strong> encontrarás contención y profesionalismo.
               </p>
             </div>
 
